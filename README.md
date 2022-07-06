@@ -1,70 +1,89 @@
-# Getting Started with Create React App
+# Bucket List
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 해야 할 일, 하고 싶은 일
 
-## Available Scripts
+Firestore과 연동하여, 리스트를 추가 및 삭제를 할 수 있습니다.
+또한, 완료 버튼을 누르면 진행도가 퍼센트로 차오릅니다.
+삭제 버튼을 누르면 진행도가 다시 내려갑니다.
 
-In the project directory, you can run:
+화면이 로딩 중이면 로딩 중 화면을 표시합니다.
 
-### `yarn start`
+![버킷리스트](/src/img/%EB%B2%84%ED%82%B7%EB%A6%AC%EC%8A%A4%ED%8A%B8.PNG)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## 추가한 프로그램, 라이브러리
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+[NVM(Node Version Manager)](https://nodejs.org/ko/docs/)
 
-### `yarn test`
+- node를 설치하는 툴
+- 수 많은 버전을 마음대로 골라 설치할 수 있습니다.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```html
+nvm install [설치할 버전]
+```
 
-### `yarn build`
+[yarn](https://yarnpkg.com/)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Javascript의 Package Manager입니다.
+- package.json을 통해 의존 패키지를 구분하고 프로젝트에서 어떤 일을 할지 결정합니다.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```html
+npm install [-g(선택)] yarn
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+[CRA(Create React App)](https://create-react-app.dev/)
 
-### `yarn eject`
+- 웹사이트를 만들 때 필요한 것을 넣어 만든 패키지입니다.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```html
+yarn create react-app [만들 프로젝트명]
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+[react-router-dom](https://v5.reactrouter.com/web/guides/primary-components)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- 웹사이트를 만들 때 필요한 것을 넣어 만든 패키지입니다.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```html
+yarn add react-router-dom
+```
 
-## Learn More
+[Redux](https://ko.redux.js.org/introduction/getting-started/)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- 상태 관리 라이브러리입니다.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```html
+yarn add redux react-redux
+```
 
-### Code Splitting
+[firestore](https://firebase.google.com/)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- realtime-database를 제공하는 서비스입니다.
 
-### Analyzing the Bundle Size
+```html
+yarn add firebase
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+[thunk](https://www.npmjs.com/package/redux-thunk)
 
-### Making a Progressive Web App
+- 비동기 통신에 필요한 미들웨어입니다.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+```html
+yarn add redux-thunk
+```
 
-### Advanced Configuration
+## 추가한 CSS 자료
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+[styled-components](https://styled-components.com/)
 
-### Deployment
+- 직관적인 코드로 쉽게 사용할 수 있습니다.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+```html
+yarn add styled-components
+```
 
-### `yarn build` fails to minify
+[material ui](https://mui.com/)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- 만들어진 ui 아이콘을 사용합니다.
+
+```html
+yarn add @material-ui/core @material-ui/icons
+```
